@@ -1,0 +1,32 @@
+@import "../../common/lib/weui.wxss";
+
+label {
+  display: inline-block;
+  min-width: 270rpx;
+  margin-right: 20rpx;
+}
+form{
+  width: 100%;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+
+
+.top{
+
+  margin-top: 60rpx;
+}
+
+
+image{
+
+  width: 100%;
+}
+
+.container{
+
+margin-top: -180rpx;
+
+}

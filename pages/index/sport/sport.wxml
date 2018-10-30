@@ -1,0 +1,43 @@
+<image src='../../../static/sport.png' />
+
+<view class="container">
+
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+
+
+
+
+      <view class="page-section">
+        <view class="page-section-title">我做了什么运动</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="sportName" placeholder="运动名称" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="page-section">
+        <view class="page-section-title">运动持续了多少时间</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input type='number' class="weui-input" name="sportTime" placeholder="多少分钟" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+
+
+      <view class='top'>
+        <button type="primary" formType="submit">打卡</button>
+      </view>
+    </form>
+  </view>
+
+</view>

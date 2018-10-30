@@ -1,0 +1,20 @@
+<view class='body'>
+
+  <view wx:for="{{ptc}}" wx:key="{{index}}" class='ft'>
+
+    <!-- 左边 -->
+    <view class='left' >
+
+      <image src='../../static/{{item.id}}.png' bindtap='{{item.tap}}' data-id='{{item.id}}' />
+      <text class='title' bindtap='{{item.tap}}' data-id='{{item.id}}'>{{item.name}}</text>
+
+    </view>
+    <!-- 右边 -->
+    <view class='right' style='background:{{item.color}}' bindtap='{{item.tap}}' data-id='{{item.id}}'>
+
+    </view>
+
+
+
+  </view>
+</view>

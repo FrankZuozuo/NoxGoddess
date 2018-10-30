@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/table-all/table-all",
+    "pages/index/read/read",
+    "pages/index/sport/sport",
+    "pages/index/text/text"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "PTC",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/homeOff.png",
+        "selectedIconPath": "static/homeOn.png",
+        "text": "打卡"
+      },
+      {
+        "pagePath": "pages/table-all/table-all",
+        "iconPath": "static/addOneOff.png",
+        "selectedIconPath": "static/addOneOn.png",
+        "text": "排行"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/mineOff.png",
+        "selectedIconPath": "static/mineOn.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+<!-- 最外层 -->
+<view class='body'>
+
+  <!-- 单个列表盒子 -->
+  <view class='list' wx:for='{{list}}' wx:key='{{index}}'>
+    <!-- 左边区块 -->
+    <view class='left' style='background:{{item.gender}}'>
+    </view>
+    <!-- 右边区块 -->
+    <view class='right'>
+
+      <!-- 上区块 -->
+      <view class='top'>
+        <!-- 左边，昵称和头像 -->
+        <view class='userinfo'>
+
+          <image src='{{item.headImg}}' />
+          <text class='nickname'>{{item.nickname}}</text>
+        </view>
+        <!-- 右边，统计值 -->
+        <view class='total'>
+          <text class='nickname'>总计： {{item.total}}</text>
+        </view>
+      </view>
+
+      <!-- 下区块 -->
+      <view class='bottom-name'>
+        <view class='t-name'>
+          早起
+        </view>
+        <view class='t-name'>
+         早睡
+        </view>
+        <view class='t-name'>
+          阅读
+        </view>
+        <view class='t-name'>
+          运动
+        </view>
+        <view class='t-name'>
+          感悟
+        </view>
+      </view>
+      <view class='bottom-value'>
+        <view class='t-value'>
+          {{item.total1}}
+        </view>
+        <view class='t-value'>
+          {{item.total2}}
+        </view>
+        <view class='t-value'>
+          {{item.total3}}
+        </view>
+        <view class='t-value'>
+          {{item.total4}}
+        </view>
+        <view class='t-value'>
+          {{item.total5}}
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,32 @@
+<image src='../../../static/text.png' />
+
+<view class="container">
+
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+
+
+
+
+      <view class="page-section">
+        <view class="page-section-title">我想跟自己说</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="text" placeholder="我的心灵独想" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+
+
+
+      <view class='top'>
+        <button type="primary" formType="submit">打卡</button>
+      </view>
+    </form>
+  </view>
+
+</view>

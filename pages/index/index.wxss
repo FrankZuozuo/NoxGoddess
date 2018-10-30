@@ -1,0 +1,44 @@
+page {
+  background: rgb(236, 238, 242);
+}
+
+.ft {
+  overflow: hidden;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  padding: 0 30rpx;
+}
+
+.left {
+  float: left;
+  height: 150rpx;
+  background: #ed9023;
+  width: 95%;
+  border-bottom-left-radius: 7rpx;
+  border-top-left-radius: 7rpx;
+  position: relative;
+}
+
+.right {
+  width: 4%;
+  height: 150rpx;
+  background: #ddd;
+  float: right;
+  border-bottom-right-radius: 7rpx;
+  border-top-right-radius: 7rpx;
+}
+
+.title {
+  position: absolute;
+  right: 50rpx;
+  top: 50rpx;
+  color: #888;
+  font-weight: 700;
+  font-size: 40rpx;
+}
+
+image {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
