@@ -1,4 +1,7 @@
 .body {
+
+
+  padding-bottom: 100rpx;
 }
 
 page{

@@ -6,21 +6,8 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        this.get(
-          'wx/getSessionByCode?code=' + res.code,
-          res => {
-            this.globalData.sessionKey = res.data.data
-            wx.setStorageSync('sessionKey', res.data.data)
-          },
-          null
-        )
+    this.wxLogin();
 
-      }
-    })
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -44,16 +31,33 @@ App({
   },
   globalData: {
     userInfo: null,
-    doMain: 'https://www.wretchant.com/ptc/api/',
-    // doMain: 'http://192.168.1.114:2700/api/',
+    // doMain: 'https://www.wretchant.com/ptc/api/',
+    doMain: 'http://192.168.1.114:2700/api/',
     sessionKey: '',
   },
 
-  login: function (sessionKey){
-    if (!sessionKey){
-        wx.navigateTo({
-          url: '../mine/mine',
-        })
+  wxLogin: function() {
+    // 登录
+    wx.login({
+      success: res => {
+        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        this.get(
+          'wx/getSessionByCode?code=' + res.code,
+          res => {
+            this.globalData.sessionKey = res.data.data
+            wx.setStorageSync('sessionKey', res.data.data)
+          },
+          null
+        )
+
+      }
+    })
+  },
+
+  login: function(sessionKey) {
+    if (sessionKey == undefined || sessionKey == '' || sessionKey == null || sessionKey == 'null' || sessionKey.length < 10) {
+      this.wxLogin();
+      
     }
   },
 

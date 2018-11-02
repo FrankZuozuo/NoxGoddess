@@ -6,12 +6,13 @@
     "pages/table-all/table-all",
     "pages/index/read/read",
     "pages/index/sport/sport",
-    "pages/index/text/text"
+    "pages/index/text/text",
+    "pages/record/record"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "PTC",
+    "navigationBarTitleText": "NoxGoddess - PTC",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -32,6 +33,12 @@
         "iconPath": "static/addOneOff.png",
         "selectedIconPath": "static/addOneOn.png",
         "text": "排行"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "iconPath": "static/recordOff.png",
+        "selectedIconPath": "static/recordOn.png",
+        "text": "纪录"
       },
       {
         "pagePath": "pages/mine/mine",

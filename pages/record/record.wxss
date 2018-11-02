@@ -1,0 +1,174 @@
+page {
+  background: rgb(236, 238, 242);
+}
+
+.body {
+  padding-top: 30rpx;
+  padding-bottom: 100rpx;
+  padding-left: 5rpx;
+  padding-right: 0rpx;
+}
+
+.list {
+  height: 440rpx;
+  background: rgb(236, 238, 242);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.q-l {
+  /* background: darkblue; */
+  width: 20%;
+}
+
+.q-z {
+  background: #2ba6e1;
+  width: 10rpx;
+  position: relative;
+}
+
+.q-r {
+  /* background: darkgoldenrod; */
+  flex: 1;
+}
+
+.q-l-1 {
+  /* background: yellow; */
+  height: 15%;
+  font-size: 40rpx;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 25rpx;
+}
+
+.q-l-2 {
+  /* background: yellowgreen; */
+  height: 10%;
+  font-size: 20rpx;
+  text-align: center;
+  font-weight: 400;
+}
+
+.q-l-3 {
+  /* background: bisque; */
+  height: 70%;
+}
+
+.q-z-1 {
+  position: absolute;
+  background: #2ba6e1;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  left: -10rpx;
+  top: 40rpx;
+}
+
+.q-r-1 {
+  /* background: black; */
+  height: 9%;
+  overflow: hidden;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.q-r-2 {
+  /* background: blue; */
+  height: 74%;
+  clear: both;
+  /* text-align: center; */
+  overflow: hidden;
+}
+
+.q-r-3 {
+  /* background: brown; */
+  height: 17%;
+  font-size: 25rpx;
+  border-top: 1rpx solid #ddd;
+  /* color: #ff7cad; */
+  color: rgba(26, 173, 25, 0.6);
+  margin-left: 10rpx;
+
+}
+
+.q-r-1-l {
+  /* background: bisque; */
+  width: 80%;
+  height: 100%;
+  float: left;
+  font-size: 25rpx;
+  /* text-align: center; */
+  color: #cdcecf;
+}
+
+.q-r-1-r {
+  /* background: blueviolet; */
+  width: 20%;
+  height: 100%;
+  float: right;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.q-r-2-1 {
+  /* background: darkcyan; */
+  width: 90%;
+  height: 41%;
+  margin-left: 5%;
+  margin-top: 10rpx;
+}
+
+.q-r-2-2 {
+  /* background: darkgoldenrod; */
+  width: 90%;
+  height: 41%;
+  margin-left: 5%;
+  margin-top: 10rpx;
+  /* clear: both; */
+}
+
+.k {
+  margin-top: 20rpx;
+  margin-left: 5%;
+  width: 90%;
+  height: 400rpx;
+  background: #fff;
+}
+
+.q-r-2-1-1 {
+  font-size: 20rpx;
+  color: #8d8e8f;
+}
+
+.q-r-2-1-2 {
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
+
+.q-r-2-1-3 {
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
+
+.q-r-2-2-1 {
+  font-size: 20rpx;
+  color: #8d8e8f;
+}
+
+.q-r-2-2-2 {
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
+
+.q-r-2-2-3 {
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
+
+text {
+  line-height: 100%;
+  margin-left: 10rpx;
+  /* margin-top: 100rpx; */
+}
+
+

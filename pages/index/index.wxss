@@ -22,7 +22,7 @@ page {
 .right {
   width: 4%;
   height: 150rpx;
-  background: #ddd;
+  /* background: #ddd; */
   float: right;
   border-bottom-right-radius: 7rpx;
   border-top-right-radius: 7rpx;
@@ -32,7 +32,7 @@ page {
   position: absolute;
   right: 50rpx;
   top: 50rpx;
-  color: #888;
+  /* color: #888; */
   font-weight: 700;
   font-size: 40rpx;
 }

@@ -22,8 +22,6 @@ Page({
 
   mark: function(e) {
     var id = e.target.dataset.id
-    console.log(e)
-    console.log(id)
 
     var mark = {
       ptcId: id,
@@ -36,6 +34,7 @@ Page({
       'mark',
       mark,
       res => {
+        // 更新页面数据
         this.onShow()
         wx.showToast({
           title: res.data,
@@ -76,6 +75,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
+
+    // 拉取页面数据
     app.get(
       'ptc',
       res => {

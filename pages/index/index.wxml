@@ -3,10 +3,10 @@
   <view wx:for="{{ptc}}" wx:key="{{index}}" class='ft'>
 
     <!-- 左边 -->
-    <view class='left' >
+    <view class='left'>
 
       <image src='../../static/{{item.id}}.png' bindtap='{{item.tap}}' data-id='{{item.id}}' />
-      <text class='title' bindtap='{{item.tap}}' data-id='{{item.id}}'>{{item.name}}</text>
+      <text class='title' bindtap='{{item.tap}}' data-id='{{item.id}}' style='color:{{item.fontColor}}'>{{item.name}}</text>
 
     </view>
     <!-- 右边 -->

@@ -1,0 +1,71 @@
+<!-- 最外层 -->
+<view class='body'>
+
+  <!-- 列表盒子 -->
+  <view class='list' wx:for="{{list}}" wx:key="{{index}}">
+
+    <!-- 左边 -->
+    <view class='q-l'>
+
+      <view class='q-l-1'>
+      {{item.day}}
+      </view>
+      <view class='q-l-2'>{{item.year}}年{{item.month}}月</view>
+      <view class='q-l-3'></view>
+
+    </view>
+    <!-- 中间 -->
+    <view class='q-z'>
+      <view class='q-z-1'></view>
+    </view>
+    <!-- 右边 -->
+    <view class='q-r'>
+      <view class='k'>
+        <view class='q-r-1'>
+
+          <view class='q-r-1-l'>
+            <text>{{item.headerLeft}}</text>
+          </view>
+          <view class='q-r-1-r'>
+            {{item.headerRight}}
+          </view>
+        </view>
+        <view class='q-r-2'>
+
+          <view class='q-r-2-1'>
+            <view class='q-r-2-1-1'>
+             {{item.valueTitle1}}
+            </view>
+            <view class='q-r-2-1-2'>
+              {{item.valueContent1}}
+            </view>
+            <view class='q-r-2-1-3'>
+               {{item.valueContent2}}
+            </view>
+          </view>
+          <view class='q-r-2-2'>
+            <view class='q-r-2-2-1'>
+          {{item.valueTitle2}}
+            </view>
+            <view class='q-r-2-2-2'>
+              {{item.valueContent3}}
+            </view>
+            <view class='q-r-2-2-3'>
+             {{item.valueContent4}}
+            </view>
+          </view>
+
+        </view>
+        <view class='q-r-3'>
+        
+
+          {{item.bottom}}
+          
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+
+</view>

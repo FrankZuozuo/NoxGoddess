@@ -37,7 +37,6 @@ Page({
       'mark',
       mark,
       res => {
-        this.onShow()
         wx.showToast({
           title: res.data,
           icon: 'none',
