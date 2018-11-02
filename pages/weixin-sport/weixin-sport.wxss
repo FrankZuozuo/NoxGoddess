@@ -1,0 +1,41 @@
+page {
+  background: rgb(236, 238, 242);
+}
+
+.left {
+  float: left;
+  width: 50%;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.list {
+  width: 96%;
+  height: 70rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.body {
+  margin-top: 40rpx;
+  padding-bottom: 100rpx;
+}
+
+text {
+  line-height: 70rpx;
+}
+
+image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 2%;
+}

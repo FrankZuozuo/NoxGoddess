@@ -28,3 +28,7 @@
 .list{
   margin-bottom: 20rpx;
 }
+
+page {
+  background: rgb(236, 238, 242);
+}

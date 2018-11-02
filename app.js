@@ -31,10 +31,30 @@ App({
   },
   globalData: {
     userInfo: null,
-    // doMain: 'https://www.wretchant.com/ptc/api/',
-    doMain: 'http://192.168.1.114:2700/api/',
+    doMain: 'https://www.wretchant.com/ptc/api/',
+    // doMain: 'http://192.168.1.114:2700/api/',
     sessionKey: '',
+    sessionId : ''
   },
+
+
+  saveUser: function () {
+    // 保存或者更新用户信息
+    var user = this.globalData.userInfo;
+    if(user == undefined || user == null){
+      user = {};
+    }
+    user.sessionKey = this.globalData.sessionKey;
+    user.sessionId = this.globalData.sessionId;
+    this.post(
+      'wx/saveUser',
+      user,
+      res => {
+      },
+      null
+    )
+  },
+
 
   wxLogin: function() {
     // 登录
@@ -44,8 +64,12 @@ App({
         this.get(
           'wx/getSessionByCode?code=' + res.code,
           res => {
-            this.globalData.sessionKey = res.data.data
-            wx.setStorageSync('sessionKey', res.data.data)
+            this.globalData.sessionKey = res.data.data.openid
+            wx.setStorageSync('sessionKey', res.data.data.openid)
+            this.globalData.sessionId = res.data.data.session_key
+            wx.setStorageSync('sessionId', res.data.data.session_key)
+            // console.log(this.globalData.sessionId)
+            this.saveUser();
           },
           null
         )

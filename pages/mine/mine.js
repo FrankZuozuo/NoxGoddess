@@ -44,23 +44,7 @@ Page({
     }
   },
 
-  saveUser: function() {
-    // 保存或者更新用户信息
-    var user = app.globalData.userInfo;
-    user.sessionKey = app.globalData.sessionKey;
-    app.post(
-      'wx/saveUser',
-      user,
-      res => {
-        // wx.showToast({
-        //   title: '用户信息更新成功',
-        //   icon: 'none',
-        //   duration: 1000
-        // })
-      },
-      null
-    )
-  },
+
 
   getUserInfo: function(e) {
     console.log(e)
@@ -71,7 +55,7 @@ Page({
         userInfo: e.detail.userInfo,
         hasUserInfo: true
       })
-      this.saveUser();
+      app.saveUser();
       wx.showToast({
         title: '授权通过，欢迎你使用',
         icon: 'none',
@@ -103,7 +87,7 @@ Page({
     if (app.globalData.userInfo && app.globalData.sessionKey) {
 
       // 更新用户信息
-      this.saveUser();
+      app.saveUser();
 
       // 获取当前用户的今日打卡记录
       app.get(

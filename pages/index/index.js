@@ -68,7 +68,17 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-
+    // 拉取页面数据
+    app.get(
+      'ptc',
+      res => {
+        this.setData({
+          ptc: res.data.data
+        })
+        // console.log(res.data.data)
+      },
+      null
+    );
   },
 
   /**
@@ -83,7 +93,7 @@ Page({
         this.setData({
           ptc: res.data.data
         })
-        console.log(res.data.data)
+        // console.log(res.data.data)
       },
       null
     );

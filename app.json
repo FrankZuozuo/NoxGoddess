@@ -7,7 +7,8 @@
     "pages/index/read/read",
     "pages/index/sport/sport",
     "pages/index/text/text",
-    "pages/record/record"
+    "pages/record/record",
+    "pages/weixin-sport/weixin-sport"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,6 +40,12 @@
         "iconPath": "static/recordOff.png",
         "selectedIconPath": "static/recordOn.png",
         "text": "纪录"
+      },
+      {
+        "pagePath": "pages/weixin-sport/weixin-sport",
+        "iconPath": "static/sportOff.png",
+        "selectedIconPath": "static/sportOn.png",
+        "text": "微信运动"
       },
       {
         "pagePath": "pages/mine/mine",

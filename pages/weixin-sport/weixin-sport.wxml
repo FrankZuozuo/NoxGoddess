@@ -1,0 +1,22 @@
+<view class='body'>
+
+
+
+
+  <view class='list' wx:for="{{stepInfoList}}" wx:key="{{index}}">
+
+
+  
+
+    <view class='left'>
+    
+      <text>{{item.timestampStr}}</text>
+    </view>
+
+    <view class='right'>
+      <text>{{item.step}} 步</text>
+    </view>
+
+  </view>
+
+</view>
